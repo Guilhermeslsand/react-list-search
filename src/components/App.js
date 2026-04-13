@@ -44,8 +44,11 @@ export default class app extends React.Component {
                 <div className="col-8">
                     <Busca onBuscaRealizada={this.onBuscaRealizada}  />
                 </div>
-                <div className="col-8">
-                    <ListaImagens pics={this.state.pics}/>
+                <div className="col-12">
+                    <div className="grid">
+                        <ListaImagens pics={this.state.pics} 
+                        imgStyle={"col-12 md:col-6 lg:col-4 xl:col-3"}/>
+                    </div>
                 </div>
             </div>
         )
