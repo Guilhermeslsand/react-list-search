@@ -11,3 +11,5 @@ const ListaImagens = ({pics}) => {
         ))
     )
 }
+
+export default ListaImagens
