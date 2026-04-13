@@ -8,12 +8,13 @@ export default class Busca extends Component {
     }
 
     onTermoAlterado = (event) => {
-        console.log(event.target.value)
+        // console.log(event.target.value)
         this.setState({termoDeBusca: event.target.value})
     }
 
     onFormSubmit = (event) => {
         event.preventDefault()
+        this.props.onBuscaRealizada(this.state.termoDeBusca)
     }
 
     render(){
@@ -25,7 +26,7 @@ export default class Busca extends Component {
                         <i className="pi pi-search"/>
                         <InputText
                         //largura máxima
-                        className="w-full"
+                        className="w-full text-center"
                         value={this.state.termoDeBusca}
                         onChange={this.onTermoAlterado}
                         placeholder={this.props.dica}
