@@ -7,7 +7,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.15.0",
+    "axios": "^1.15.2",
     "pexels": "^1.4.0",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
